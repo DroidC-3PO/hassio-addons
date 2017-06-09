@@ -7,7 +7,8 @@
   "startup": "before",
   "boot": "auto",
   "ports": {
-    "1704/tcp": 1704
+    "1704/tcp": 1704,
+    "1705/tcp": 1705
    },
   "map": ["share"],
   "options": {},
