@@ -1,6 +1,6 @@
 {
   "name": "Snapcast server",
-  "version": "0.1",
+  "version": "0.2",
   "slug": "snapcast",
   "description": "Synchronous multi-room audio player",
   "url": "https://home-assistant.io/addons/Snapcast/",
