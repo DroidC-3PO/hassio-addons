@@ -1,0 +1,15 @@
+{
+  "name": "Snapcast server",
+  "version": "0.1",
+  "slug": "snapcastServer",
+  "description": "Synchronous multi-room audio player",
+  "url": "https://home-assistant.io/addons/Snapcast/",
+  "startup": "before",
+  "boot": "auto",
+  "ports": {
+    "1704/tcp": 1704
+   },
+  "map": ["share"],
+  "options": {},
+  "schema": {}
+}
