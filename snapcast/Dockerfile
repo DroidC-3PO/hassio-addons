@@ -33,7 +33,7 @@ RUN mkdir -p /root/.config/snapcast/
 # config-files
 ADD ./asound.conf /etc/asound.conf
 ADD ./librespot /usr/local/bin/librespot
-	
+RUN chmod a+x /usr/local/bin/librespot
 
 # Copy data
 COPY run.sh /
