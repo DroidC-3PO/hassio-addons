@@ -4,7 +4,8 @@ FROM ubuntu:latest
 ENV LANG C.UTF-8
 
 # Setup base
-RUN apk add --no-cache tzdata wget 	
+#RUN apk add --no-cache tzdata wget 	
+RUN apt-get update && apt-get install wget -y
 					   
 # Snapcast, Shairport-sync,avahi and dbus					   
  					   
