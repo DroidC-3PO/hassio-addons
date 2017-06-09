@@ -1,4 +1,4 @@
-FROM %%BASE_IMAGE%%
+FROM ubuntu:latest
 
 # Add env
 ENV LANG C.UTF-8
