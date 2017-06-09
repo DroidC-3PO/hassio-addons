@@ -4,10 +4,7 @@ FROM %%BASE_IMAGE%%
 ENV LANG C.UTF-8
 
 # Setup base
-#RUN apt-get -qq update &&\
-#    apt-get -qq install build-essential git avahi-daemon avahi-utils dbus shairport-sync \
-#        supervisor bzip2 portaudio19-dev libvorbisfile3 curl libprotoc-dev cargo
-					   
+RUN apk add --no-cache tzdata jq curl		
 					   
 # Snapcast, Shairport-sync,avahi and dbus					   
  					   
