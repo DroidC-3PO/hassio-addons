@@ -4,7 +4,7 @@ FROM python:3.4
 VOLUME /config
 
 RUN mkdir -p /config/adddaemon
-COPY config/. /config/adddaemon/.
+COPY conf/. /config/adddaemon/.
 
 # Copy source
 RUN mkdir -p /usr/src/app
