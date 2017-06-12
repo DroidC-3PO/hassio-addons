@@ -2,12 +2,12 @@
   "name": "Appdaemon",
   "version": "0.1",
   "slug": "appdaemon",
-  "description": "Appdaemon",
+  "description": "Appdaemon addon",
   "url": "https://home-assistant.io/addons/Appdaemon/",
   "startup": "before",
   "boot": "auto",
   "ports": {
-    "9999/tcp": 9999,
+    "9999/tcp": 9999
    },
   "map": ["config:rw"],
   "options": {},

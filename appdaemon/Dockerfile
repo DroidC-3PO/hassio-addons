@@ -4,14 +4,18 @@ FROM python:3.4
 VOLUME /config
 
 RUN mkdir -p /config/adddaemon
-COPY config/ /config/adddaemon
+COPY config/. /config/adddaemon/.
 
 # Copy source
-WORKDIR /usr/src/app
 RUN mkdir -p /usr/src/app
-COPY appdaemon/ .
+COPY appdaemon/. /usr/src/app/.
 
 # INSTALL
-RUN pip3 install .
+RUN pip3 install /usr/src/app/.
 
-CMD [ "appdaemon", "-c", "/config/appdaemon.cfg" ]
+
+# Copy data
+COPY run.sh /
+RUN chmod a+x /run.sh
+
+CMD [ "/run.sh" ]
